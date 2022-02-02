@@ -30,8 +30,11 @@ const Home = () => {
       </div>
       <div className="flex md:hidden flex-row">
         <HiMenu fontSize={40} className="cursor-pointer" onClick={() => setToggleSidebar()} />
-        <Link to={`user-profile/${user?._id}`}>
+        <Link to='/'>
           <img src={logo} alt="logo" className='w-28' />
+        </Link>
+        <Link to={`user-profile/${user?._id}`}>
+          <img src={user?.image} alt="logo" className='w-28' />
         </Link>
       </div>
     </div>

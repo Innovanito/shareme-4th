@@ -1,5 +1,5 @@
 export const userQuery = (userId) => {
-  const query = `*[_type == "user" && _id == '${uesrId}']`
+  const query = `*[_type == "user" && _id == '${userId}']`
 
   return query
 } 
